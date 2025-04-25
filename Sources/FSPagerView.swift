@@ -221,7 +221,7 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
     internal weak var collectionViewLayout: FSPagerViewLayout!
     internal weak var collectionView: FSPagerCollectionView!
     @objc
-    open var contentCollectionView: FSPagerCollectionView {
+    open var contentCollectionView: UICollectionView {
         return self.collectionView
     }
 
