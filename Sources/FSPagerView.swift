@@ -220,6 +220,11 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
     
     internal weak var collectionViewLayout: FSPagerViewLayout!
     internal weak var collectionView: FSPagerCollectionView!
+    @objc
+    open var contentCollectionView: FSPagerCollectionView {
+        return self.collectionView
+    }
+
     internal weak var contentView: UIView!
     internal var timer: Timer?
     internal var numberOfItems: Int = 0
